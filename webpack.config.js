@@ -46,12 +46,12 @@ module.exports = {
             }
           }
         ]
-      }
-      /* {
+      },
+      {
         test: /\.js$/,
         use: require.resolve("source-map-loader"),
         enforce: "pre"
-      } */
+      }
     ]
   },
   resolve: {
