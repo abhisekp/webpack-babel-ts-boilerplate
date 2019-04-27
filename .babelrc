@@ -1,0 +1,35 @@
+{
+  "sourceMaps": true,
+  "env": {
+    "production": {
+      "presets": [
+        [
+          "minify",
+          {
+            "mangle": false,
+            "deadcode": false,
+            "removeDebugger": true
+          }
+        ]
+      ]
+    }
+  },
+  "plugins": ["transform-promise-to-bluebird"],
+  "presets": [
+    "proposals",
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": 3,
+        "loose": true,
+        "modules": false,
+        "shippedProposals": true,
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ]
+}

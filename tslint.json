@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": "tslint-config-airbnb-base"
+}
